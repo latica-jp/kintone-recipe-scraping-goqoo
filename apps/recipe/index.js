@@ -2,6 +2,8 @@ import cheerio from 'cheerio'
 import { cleanLineBreaksFromObject, downloadDataAsBlob, uploadFile } from '../common/utils'
 
 kintone.events.on(['app.record.index.show'], event => {
+  if (document.getElementById('receive_recipe_button')) return event
+
   const button = document.createElement('button')
   button.textContent = 'Fetch'
   button.type = 'button'
@@ -9,8 +11,10 @@ kintone.events.on(['app.record.index.show'], event => {
   kintone.app.getHeaderMenuSpaceElement().appendChild(button)
 
   const input = document.createElement('input')
+  input.id = 'receive_recipe_button'
   input.type = 'text'
   input.name = 'recipe_url'
+  input.size = 40
   kintone.app.getHeaderMenuSpaceElement().appendChild(input)
 
   return event
