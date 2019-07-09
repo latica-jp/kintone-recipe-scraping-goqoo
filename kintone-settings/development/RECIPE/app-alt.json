@@ -1,0 +1,18 @@
+{
+  "appId": "<APP_ID>",
+  "code": "",
+  "name": "<APP_NAME>",
+  "description": "",
+  "createdAt": "<CREATED_AT>",
+  "creator": {
+    "code": "<CREATOR_CODE>",
+    "name": "<CREATOR_NAME>"
+  },
+  "modifiedAt": "<MODIFIED_AT>",
+  "modifier": {
+    "code": "<MODIFIER_CODE>",
+    "name": "<MODIFIER_NAME>"
+  },
+  "spaceId": "<SPACE_ID>",
+  "threadId": "<THREAD_ID>"
+}

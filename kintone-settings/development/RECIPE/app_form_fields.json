@@ -1,0 +1,140 @@
+{
+  "properties": {
+    "レコード番号": {
+      "type": "RECORD_NUMBER",
+      "code": "レコード番号",
+      "label": "レコード番号",
+      "noLabel": false
+    },
+    "作業者": {
+      "type": "STATUS_ASSIGNEE",
+      "code": "作業者",
+      "label": "作業者",
+      "enabled": false
+    },
+    "recipeImage": {
+      "type": "FILE",
+      "code": "recipeImage",
+      "label": "レシピ画像",
+      "noLabel": false,
+      "required": false,
+      "thumbnailSize": "150"
+    },
+    "更新者": {
+      "type": "MODIFIER",
+      "code": "更新者",
+      "label": "更新者",
+      "noLabel": false
+    },
+    "作成者": {
+      "type": "CREATOR",
+      "code": "作成者",
+      "label": "作成者",
+      "noLabel": false
+    },
+    "ステータス": {
+      "type": "STATUS",
+      "code": "ステータス",
+      "label": "ステータス",
+      "enabled": false
+    },
+    "steps": {
+      "type": "SUBTABLE",
+      "code": "steps",
+      "fields": {
+        "step": {
+          "type": "MULTI_LINE_TEXT",
+          "code": "step",
+          "label": "手順",
+          "noLabel": false,
+          "required": false,
+          "defaultValue": ""
+        },
+        "stepImage": {
+          "type": "FILE",
+          "code": "stepImage",
+          "label": "手順画像",
+          "noLabel": false,
+          "required": false,
+          "thumbnailSize": "150"
+        }
+      }
+    },
+    "更新日時": {
+      "type": "UPDATED_TIME",
+      "code": "更新日時",
+      "label": "更新日時",
+      "noLabel": false
+    },
+    "recipeName": {
+      "type": "SINGLE_LINE_TEXT",
+      "code": "recipeName",
+      "label": "レシピ名称",
+      "noLabel": false,
+      "required": false,
+      "minLength": "",
+      "maxLength": "",
+      "expression": "",
+      "hideExpression": false,
+      "unique": false,
+      "defaultValue": ""
+    },
+    "カテゴリー": {
+      "type": "CATEGORY",
+      "code": "カテゴリー",
+      "label": "カテゴリー",
+      "enabled": false
+    },
+    "ingredients": {
+      "type": "SUBTABLE",
+      "code": "ingredients",
+      "fields": {
+        "ingredient": {
+          "type": "SINGLE_LINE_TEXT",
+          "code": "ingredient",
+          "label": "材料",
+          "noLabel": false,
+          "required": false,
+          "minLength": "",
+          "maxLength": "",
+          "expression": "",
+          "hideExpression": false,
+          "unique": false,
+          "defaultValue": ""
+        },
+        "ingredientAmount": {
+          "type": "SINGLE_LINE_TEXT",
+          "code": "ingredientAmount",
+          "label": "数量",
+          "noLabel": false,
+          "required": false,
+          "minLength": "",
+          "maxLength": "",
+          "expression": "",
+          "hideExpression": false,
+          "unique": false,
+          "defaultValue": ""
+        }
+      }
+    },
+    "作成日時": {
+      "type": "CREATED_TIME",
+      "code": "作成日時",
+      "label": "作成日時",
+      "noLabel": false
+    },
+    "recipeUrl": {
+      "type": "SINGLE_LINE_TEXT",
+      "code": "recipeUrl",
+      "label": "レシピURL",
+      "noLabel": false,
+      "required": false,
+      "minLength": "",
+      "maxLength": "",
+      "expression": "",
+      "hideExpression": false,
+      "unique": false,
+      "defaultValue": ""
+    }
+  }
+}

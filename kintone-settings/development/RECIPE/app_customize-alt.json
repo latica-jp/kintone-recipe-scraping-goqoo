@@ -1,0 +1,17 @@
+{
+  "scope": "ALL",
+  "desktop": {
+    "js": [
+      "<DESKTOP_JS>"
+    ],
+    "css": [
+      "<DESKTOP_CSS>"
+    ]
+  },
+  "mobile": {
+    "js": [
+      "<MOBILE_JS>"
+    ],
+    "css": []
+  }
+}

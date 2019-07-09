@@ -1,0 +1,90 @@
+{
+  "properties": [
+    {
+      "type": "SUBTABLE",
+      "code": "steps",
+      "fields": [
+        {
+          "type": "FILE",
+          "label": "手順画像",
+          "noLabel": "false",
+          "code": "stepImage",
+          "required": "false"
+        },
+        {
+          "type": "MULTI_LINE_TEXT",
+          "label": "手順",
+          "noLabel": "false",
+          "code": "step",
+          "required": "false",
+          "defaultValue": ""
+        }
+      ]
+    },
+    {
+      "type": "SUBTABLE",
+      "code": "ingredients",
+      "fields": [
+        {
+          "type": "SINGLE_LINE_TEXT",
+          "label": "材料",
+          "noLabel": "false",
+          "code": "ingredient",
+          "required": "false",
+          "minLength": null,
+          "maxLength": null,
+          "expression": "",
+          "hideExpression": "false",
+          "unique": "false",
+          "defaultValue": ""
+        },
+        {
+          "type": "SINGLE_LINE_TEXT",
+          "label": "数量",
+          "noLabel": "false",
+          "code": "ingredientAmount",
+          "required": "false",
+          "minLength": null,
+          "maxLength": null,
+          "expression": "",
+          "hideExpression": "false",
+          "unique": "false",
+          "defaultValue": ""
+        }
+      ]
+    },
+    {
+      "type": "SINGLE_LINE_TEXT",
+      "label": "レシピ名称",
+      "noLabel": "false",
+      "code": "recipeName",
+      "required": "false",
+      "minLength": null,
+      "maxLength": null,
+      "expression": "",
+      "hideExpression": "false",
+      "unique": "false",
+      "defaultValue": ""
+    },
+    {
+      "type": "SINGLE_LINE_TEXT",
+      "label": "レシピURL",
+      "noLabel": "false",
+      "code": "recipeUrl",
+      "required": "false",
+      "minLength": null,
+      "maxLength": null,
+      "expression": "",
+      "hideExpression": "false",
+      "unique": "false",
+      "defaultValue": ""
+    },
+    {
+      "type": "FILE",
+      "label": "レシピ画像",
+      "noLabel": "false",
+      "code": "recipeImage",
+      "required": "false"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "layout": [
+    {
+      "type": "ROW",
+      "fields": [
+        {
+          "type": "SINGLE_LINE_TEXT",
+          "code": "recipeUrl",
+          "size": {
+            "width": "433"
+          }
+        }
+      ]
+    },
+    {
+      "type": "ROW",
+      "fields": [
+        {
+          "type": "SINGLE_LINE_TEXT",
+          "code": "recipeName",
+          "size": {
+            "width": "433"
+          }
+        },
+        {
+          "type": "FILE",
+          "code": "recipeImage",
+          "size": {
+            "width": "207"
+          }
+        }
+      ]
+    },
+    {
+      "type": "SUBTABLE",
+      "code": "ingredients",
+      "fields": [
+        {
+          "type": "SINGLE_LINE_TEXT",
+          "code": "ingredient",
+          "size": {
+            "width": "193"
+          }
+        },
+        {
+          "type": "SINGLE_LINE_TEXT",
+          "code": "ingredientAmount",
+          "size": {
+            "width": "193"
+          }
+        }
+      ]
+    },
+    {
+      "type": "SUBTABLE",
+      "code": "steps",
+      "fields": [
+        {
+          "type": "MULTI_LINE_TEXT",
+          "code": "step",
+          "size": {
+            "width": "315",
+            "innerHeight": "125"
+          }
+        },
+        {
+          "type": "FILE",
+          "code": "stepImage",
+          "size": {
+            "width": "207"
+          }
+        }
+      ]
+    }
+  ]
+}

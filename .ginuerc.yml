@@ -1,0 +1,7 @@
+location: kintone-settings
+alt: true
+env:
+  development:
+    domain: latica.cybozu.com
+    app:
+      RECIPE: 175

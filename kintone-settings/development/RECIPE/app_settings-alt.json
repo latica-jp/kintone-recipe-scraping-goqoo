@@ -1,0 +1,9 @@
+{
+  "name": "<APP_NAME>",
+  "description": "",
+  "icon": {
+    "type": "PRESET",
+    "key": "APP39"
+  },
+  "theme": "WHITE"
+}
